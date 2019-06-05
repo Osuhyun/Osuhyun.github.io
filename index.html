@@ -12,7 +12,9 @@
 			clear:both;
 		}
 		body{
-			background-image: url(./back.png)		}
+			background-image: url(./back.png);
+			width: 100%;
+		}
 		header{
 			width: 100%;
 			height: 120px;
@@ -39,7 +41,7 @@
 
 		}
 		nav li{
-			padding-left: 150px;
+			padding-left: 100px;
 			float: left;
 			margin:15px 50px;
 		}
@@ -54,16 +56,18 @@
 		}
 
 		section{
-			float: left;
-			margin-top: 10px;	
+			float: left;	
 			background-color: white;
 				}
+		#left{
+			margin-left: 300px;
+		}
 		aside{
 			margin-top: 10px;
 			margin-left: 20px;
 			float:left;
 			width: 300px;
-			height: 100px;
+			height: 150px;
 			border: solid 1px #cccccc;
 			background-color: #00A0B8;
 			color: white;
@@ -98,9 +102,13 @@
 		.dropdown:hover .dropdown-content{
 		display: block;
 	}
+
+	#center{ margin: auto; }
 	</style>
 </head>
 <body>
+
+<div id= 'center'>
 <header>
 	<div id='logo'>
 		<a href="./index.html">
@@ -148,14 +156,15 @@
 	</nav>
 <div class="clear"></div><!--속성해제-->
 <section>
-	<img src="./img/nav.jpg" width="1510">
+	<div id ='left'>
+	<img src="./img/dodang.jpg" width="810">
+</div>
 </section>
 <aside>
-	<ul>
 		<form>
 		로그인 : <input type="text"><br>
-		비밀번호 : <input type="password"
-	</form>
+		비밀번호 : <input type="password">
+		</form>
 	<br>회원가입 │ 아이디찾기 │ 비밀번호찾기
 	</aside>
 <div class="clear"></div>
@@ -167,5 +176,6 @@
 <footer class="clear">
 			</div>
 	</footer>
+</div>
 </body>
 </html>
