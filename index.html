@@ -3,6 +3,7 @@
 <head>
 	<title></title>
 	<style>
+
 		*{
 			padding: 0;
 			margin: 0;
@@ -10,14 +11,16 @@
 		.clear{
 			clear:both;
 		}
+		body{
+			background-image: url(./back.png)		}
 		header{
-			width: 1000px;
-			height: 100px;
-			margin-top:10px;
-			border:solid 1px #cccccc;
+			width: 100%;
+			height: 120px;
+			margin-top:0px;
+			color: white;
 		}
 		#logo{
-			margin-top: 20px;
+			margin-top: 0px;
 			float: left;
 		}
 		#top{
@@ -25,49 +28,82 @@
 			margin:30px 20px 0 0;
 		}
 		nav{
-			width: 1000px;
-			height: 70px;
-			margin-top: 10px;
-			border:solid 1px #cccccc;
+			width: 100%;
+			height: 50px;
+			margin-top: 40px;
+			background-color: rgba(0,160,184,0.5);
+			color:white;
+			font-family: 고딕;
+			border-radius: 0.5em;
+			margin-bottom: 300px;
+
 		}
 		nav li{
+			padding-left: 150px;
 			float: left;
-			margin:20px 50px;
+			margin:15px 50px;
 		}
 
 		li{
 			list-style-type: none;
 		}
 
+		#back{
+
+			background-color: white;
+		}
+
 		section{
 			float: left;
-			margin-top: 10px;
-			border:solid 1px #cccccc;
-		}
+			margin-top: 10px;	
+			background-color: white;
+				}
 		aside{
-			float:left;
-			padding-left: 27px;
-			margin-left: 10px;
 			margin-top: 10px;
+			margin-left: 20px;
+			float:left;
+			width: 300px;
+			height: 100px;
 			border: solid 1px #cccccc;
-		}
-		aside li {
-			margin-bottom: 30px;
+			background-color: #00A0B8;
+			color: white;
+			line-height: 200%;
+			text-align: center;
 		}
 		
 		footer{
-			width: 1000px;
-			height: 100px;
+			width: 100%;
+			height: 300px;
 			margin-top: 10px;
-			border:solid 1px #cccccc;
+			background-image:url(./img/footer.jpg);
 		}
 		
+			.dropdown{
+		display: block;
+	}
+
+	.dropdown-content{
+		position: absolute;
+		display: none;
+		background-color: white;
+		width: 100px;
+		height: 140px;
+		padding: 12px 16px;
+		color: black;
+		border: dotted 1px #cccccc;
+			box-shadow: 10px 10px #cccccc;
+			line-height: 300%;
+	}
+
+		.dropdown:hover .dropdown-content{
+		display: block;
+	}
 	</style>
 </head>
 <body>
 <header>
 	<div id='logo'>
-		봄 여행 주간 4.27~5.12
+		<img src="./logo.png" width="250">
 	</div>
 	<div id='top'>
 			로그인 │ 회원가입 │ 마이페이지 │ 고객센터
@@ -76,36 +112,57 @@
 	</header>
 	<nav>
 		<ul>
-			<li> 여행주간이란?</li>
-			<li> 여행주간프로그램</li>
+			<li>
+			<div class="dropdown">
+	<span>하이라이트</span>
+	<div class="dropdown-content"
+	<p>축제&행사</p>
+	<p>부천 top10</p>
+	<p>부천 영상</p>
+	</div>
+	</div>
+	</li>
+			<li>
+				<div class="dropdown">
+	<span>부천 즐기기</span>
+	<div class="dropdown-content"
+	<p>추천코스</p>
+	<p>쇼핑</p>
+	<p>음식점</p>
+	</div>
+	</div>
+
+			</li>
 			<li> 여행정보</li>
 			<li> 특별혜택</li>
-			<li> 이벤트</li>
+			<li> 	<div class="dropdown">
+	<span>고객센터</span>
+	<div class="dropdown-content"
+	<p>1:1문의</p>
+	<p>콜센터</p>
+	</div>
+	</div></li>
 		</ul>
-				</nav>
+	</nav>
 <div class="clear"></div><!--속성해제-->
 <section>
-	<img src="./main.png" width="810">
+	<img src="./img/nav.jpg" width="1510">
 </section>
 <aside>
 	<ul>
-		<li>마을여행 </li>
-		<li>핵심혜택 </li>
-		<li>이벤트 </li>
-		<li>대한민국 구석구석 </li>
-</ul>
-</aside>
+		<form>
+		로그인 : <input type="text"><br>
+		비밀번호 : <input type="password"
+	</form>
+	<br>회원가입 │ 아이디찾기 │ 비밀번호찾기
+	</aside>
 <div class="clear"></div>
+<div id='back'>
 <section class='clear'>
-	<img src="./gooff.png" width="1000">
+	<img src="./img/sec.jpg" width="1920">
 </section>
-<footer>
-		<div id="address">
-			주최 : 문화체육관광부<br>
-			주관 : 한국관광공사,한국관광협회중앙회,전국지방자체단체
-		</div>
-		<div id='customer'>
-				관광안내전화 : 국번없이 1330
+</div>
+<footer class="clear">
 			</div>
 	</footer>
 </body>
