@@ -12,7 +12,9 @@
 			clear:both;
 		}
 		body{
-			background-image: url(./back.png)		}
+			background-image: url(./back.png);
+			width: 100%;
+		}
 		header{
 			width: 100%;
 			height: 120px;
@@ -29,7 +31,7 @@
 		}
 		nav{
 			width: 100%;
-			height: 50px;
+			height: 60px;
 			margin-top: 40px;
 			background-color: rgba(0,160,184,0.5);
 			color:white;
@@ -39,11 +41,11 @@
 
 		}
 		nav li{
-			padding-left: 150px;
+			padding-left: 100px;
 			float: left;
 			margin:15px 50px;
-		}
-
+			font-size: 13pt;
+			}
 		li{
 			list-style-type: none;
 		}
@@ -54,22 +56,10 @@
 		}
 
 		section{
-			float: left;
-			margin-top: 10px;	
+			float: left;	
 			background-color: white;
+			margin-top: 25px;
 				}
-		aside{
-			margin-top: 10px;
-			margin-left: 20px;
-			float:left;
-			width: 300px;
-			height: 100px;
-			border: solid 1px #cccccc;
-			background-color: #00A0B8;
-			color: white;
-			line-height: 200%;
-			text-align: center;
-		}
 		
 		footer{
 			width: 100%;
@@ -93,14 +83,19 @@
 		border: dotted 1px #cccccc;
 			box-shadow: 10px 10px #cccccc;
 			line-height: 300%;
+			font-size: 10pt;
 	}
 
 		.dropdown:hover .dropdown-content{
 		display: block;
 	}
+
+	#center{ margin: auto; }
 	</style>
 </head>
 <body>
+
+<div id= 'center'>
 <header>
 	<div id='logo'>
 		<a href="./index.html">
@@ -108,7 +103,7 @@
 </a>
 	</div>
 	<div id='top'>
-			로그인 │ 회원가입 │ 마이페이지 │ 고객센터
+			<a href="./index3.html">로그인</a> │ <a href="./index4.html">회원가입</a> │ 마이페이지 │ 고객센터
 		</div>
 	<div class="clear"></div><!--float 속성 해제-->
 	</header>
@@ -117,17 +112,17 @@
 			<li>
 			<div class="dropdown">
 	<span>하이라이트</span>
-	<div class="dropdown-content"
+	<div class="dropdown-content">
 	<p><a href="./index2.html">축제&행사</a></p>
 	<p>부천 top10</p>
-	<p>부천 영상</p>
+	<p><a href="./index5.html">부천 영상</a></p>
 	</div>
 	</div>
 	</li>
 			<li>
 				<div class="dropdown">
 	<span>부천 즐기기</span>
-	<div class="dropdown-content"
+	<div class="dropdown-content">
 	<p>추천코스</p>
 	<p>쇼핑</p>
 	<p>음식점</p>
@@ -139,7 +134,7 @@
 			<li> 특별혜택</li>
 			<li> 	<div class="dropdown">
 	<span>고객센터</span>
-	<div class="dropdown-content"
+	<div class="dropdown-content">
 	<p>1:1문의</p>
 	<p>콜센터</p>
 	</div>
@@ -148,74 +143,14 @@
 	</nav>
 <div class="clear"></div><!--속성해제-->
 <section>
-	축제 & 행사 소개
-	<table width=490 height=490 border=1> 
-<!-- 첫번째 줄입니다.--> 
-<tr align=center height=70> 
-<th width=70>일</th> 
-<th width=70>월</th> 
-<th width=70>화</th> 
-<th width=70>수</th> 
-<th width=70>목</th> 
-<th width=70>금</th> 
-<th width=70>토</font></th> 
-</tr> 
-<!-- 두번째 줄입니다.--> 
-<tr align=center height=70> 
-<td>&nbsp;</td> 
-<td>&nbsp;</td> 
-<td>&nbsp;</td> 
-<td>1</td> 
-<td>2</td> 
-<td>3</td> 
-<td><font color=blue>4</font></td> 
-</tr> 
-<!-- 세번째 줄입니다.--> 
-<tr align=center height=70> 
-<td>5</td> 
-<td>6</td> 
-<td>7</td> 
-<td>8</td> 
-<td>9</td> 
-<td>10</td> 
-<td>11</td> 
-</tr> 
-<!-- 네번째 줄입니다.--> 
-<tr align=center height=70> 
-<td>12</td> 
-<td>13</td> 
-<td>14</td> 
-<td>15</td> 
-<td>16</td> 
-<td>17</td> 
-<td>18</td> 
-</tr> 
-<!-- 다섯번째 줄입니다.--> 
-<tr align=center height=70> 
-<td>19</td> 
-<td>20</td> 
-<td>21</td> 
-<td>22</td> 
-<td>23</td> 
-<td>24</td> 
-<td>25</td> 
-</tr> 
-<!-- 여섯번째 줄입니다.--> 
-<tr align=center height=70> 
-<td>26</td> 
-<td>27</td> 
-<td>28</td> 
-<td>29</td> 
-<td>30</td> 
-<td>&nbsp;</td> 
-<td>&nbsp;</td> 
-</tr> 
-
-</table> 
+	<div id ='left'>
+	<img src="./7festival.png" width="1920">
+</div>
 </section>
 
 <footer class="clear">
 			</div>
 	</footer>
+</div>
 </body>
 </html>

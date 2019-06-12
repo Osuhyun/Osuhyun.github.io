@@ -56,9 +56,9 @@
 		}
 
 		section{
-			float: left;	
+			float: left;
+			height: 500px;	
 			background-color: white;
-			margin-top: 25px;
 				}
 		
 		footer{
@@ -91,11 +91,36 @@
 	}
 
 	#center{ margin: auto; }
+
+	#join{
+		margin-top: 30px;
+		margin-bottom: 10px;
+		margin-left: 580px;
+		width : 700px;
+		height: 370px;
+		text-align: center;
+		border: dotted 2px #cccccc;
+		line-height: 260%;
+		padding-bottom: -10px;
+		padding-left: 100px;
+	}
+
+	table{
+		border-collapse: collapse;
+	}
+	th{
+		text-align: center;
+	}
+	td{
+		text-align: left;
+		padding-left: 10px;
+	}
+	h2{
+		margin-left: -100px;
+	}
 	</style>
 </head>
 <body>
-
-<div id= 'center'>
 <header>
 	<div id='logo'>
 		<a href="./index.html">
@@ -112,7 +137,7 @@
 			<li>
 			<div class="dropdown">
 	<span>하이라이트</span>
-	<div class="dropdown-content">
+	<div class="dropdown-content"
 	<p><a href="./index2.html">축제&행사</a></p>
 	<p>부천 top10</p>
 	<p><a href="./index5.html">부천 영상</a></p>
@@ -122,7 +147,7 @@
 			<li>
 				<div class="dropdown">
 	<span>부천 즐기기</span>
-	<div class="dropdown-content">
+	<div class="dropdown-content"
 	<p>추천코스</p>
 	<p>쇼핑</p>
 	<p>음식점</p>
@@ -143,20 +168,42 @@
 	</nav>
 <div class="clear"></div><!--속성해제-->
 <section>
-	<div id ='left'>
-	<img src="./img/nav.jpg" width="100%">
-</div>
+	<div id= join>
+			<h2>JOIN</h2>
+	<form>
+<table border="1" width="600">
+	<tr>
+		<th>이름 : </th>
+		<td><input type="text"></td>
+	</tr>
+		<tr>
+		<th>아이디 : </th>
+		<td><input type="text"></td>
+	</tr>
+	<tr>
+		<th>패스워드 : </th>
+		<td><input type="text"></td>
+	</tr>
+	<tr>
+		<th>메일 주소 : </th>
+		<td><input type="email">
+			<input type="submit" value="확인"></td>
+	</tr>
+	<tr>
+		<th>코멘트 : </th>
+		<td><textarea rows=5 cols=60 placeholder="자신을 자유롭게 소개해주세요"></textarea></td>
+	</tr>
+	<tr>
+		<th colspan="2"><input type="submit" name="확인"></th>
+	</tr>
+</table>
+</form>
+	</div>
+
 </section>
 
-<div class="clear"></div>
-<div id='back'>
-<section class='clear'>
-	<img src="./img/sec.jpg" width="1920">
-</section>
-</div>
 <footer class="clear">
 			</div>
 	</footer>
-</div>
 </body>
 </html>

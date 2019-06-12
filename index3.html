@@ -56,9 +56,9 @@
 		}
 
 		section{
-			float: left;	
+			float: left;
+			height: 500px;	
 			background-color: white;
-			margin-top: 25px;
 				}
 		
 		footer{
@@ -91,11 +91,21 @@
 	}
 
 	#center{ margin: auto; }
+
+	#login{
+		margin-top: 60px;
+		margin-left: 760px;
+		width : 400px;
+		height: 200px;
+		text-align: center;
+		border: dotted 2px #cccccc;
+		padding-top: 55px;
+		line-height: 260%;
+		padding-bottom: -40px;
+	}
 	</style>
 </head>
 <body>
-
-<div id= 'center'>
 <header>
 	<div id='logo'>
 		<a href="./index.html">
@@ -112,7 +122,7 @@
 			<li>
 			<div class="dropdown">
 	<span>하이라이트</span>
-	<div class="dropdown-content">
+	<div class="dropdown-content"
 	<p><a href="./index2.html">축제&행사</a></p>
 	<p>부천 top10</p>
 	<p><a href="./index5.html">부천 영상</a></p>
@@ -122,7 +132,7 @@
 			<li>
 				<div class="dropdown">
 	<span>부천 즐기기</span>
-	<div class="dropdown-content">
+	<div class="dropdown-content"
 	<p>추천코스</p>
 	<p>쇼핑</p>
 	<p>음식점</p>
@@ -143,20 +153,16 @@
 	</nav>
 <div class="clear"></div><!--속성해제-->
 <section>
-	<div id ='left'>
-	<img src="./img/nav.jpg" width="100%">
-</div>
+	<div id= login>
+		<h3>LOGIN</h3>
+		아이디 : <input type="text"><br>
+		비밀번호 : <input type="text"> 
+	</div>
+
 </section>
 
-<div class="clear"></div>
-<div id='back'>
-<section class='clear'>
-	<img src="./img/sec.jpg" width="1920">
-</section>
-</div>
 <footer class="clear">
 			</div>
 	</footer>
-</div>
 </body>
 </html>

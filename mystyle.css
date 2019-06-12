@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+/*윈도우 배경색 설정*/
+body
+{
+	background-color: #FAE7E7;
+}
+
+/*링크 색상 설정*/
+a:link{color: lime;}
+a:visited{color:pink;}
+
+/*페이지 제목 설정*/
+section>h2{
+	border: dotted 1px;
+	padding: 0px 0px 20px 0px;
+	border-left: solid 10px blue;
+	color: blue
+}
+
+/*큰 표제 설정*/
+h1{
+	color: green;
+	text-align: center;
+}
+
+/*정보 데이터 표제 설정*/
+li{
+	text-decoration: underline;
+}
+
+dt{
+	font-weight: bold;
+}
+/*인트로문 영역 설정*/
+
+
+/*‘더 보기’링크 설정*/
+#align{
+	text-align: right;
+}
+/*털, 성별 정보(공통)*/
+.cat-type-female
+{
+	color:pink;
+}
+.cat-type-male
+{
+color: lightblue;
+}
+
+/*성별에 따른 색상 구분*/

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">			
+<title>
+	이거하면집감
+</title>
+<style>
+	table{
+		border-collapse: collapse;
+	}
+	th{
+		text-align: center;
+	}
+</style>
+</head>
+<body>
+	<h2>고양이 사진 투고 양식</h2>
+	<form>
+<table border="1" width="700">
+	<tr>
+		<th>고양이 이름 : </th>
+		<td><input type="text"></td>
+	</tr>
+		<tr>
+		<th>주소 : </th>
+		<td><select>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+			</select></td>
+	</tr>
+	<tr>
+		<th>성별 : </th>
+		<td><label><input type="radio" name="gender">여성</label>
+			<label><input type="radio" name="gender">남성</label></td>
+	</tr>
+	<tr>
+		<th>좋아하는 것 : </th>
+		<td><label><input type="checkbox">생선</label>
+			<label><input type="checkbox">고기</label>
+			<label><input type="checkbox">우유</label>
+			<label><input type="checkbox">바삭바삭한 것</label>
+			<label><input type="checkbox">고양이 통조림</label>
+			<label><input type="checkbox">단것</td></label>
+	</tr>
+	<tr>
+		<th>사진 : </th>
+		<td><input type="file"></td>
+	</tr>
+	<tr>
+		<th>기르는 주인 이름 : </th>
+		<td><input type="text"></td>
+	</tr>
+	<tr>
+		<th>메일 주소 : </th>
+		<td><input type="email">
+			<input type="submit" value="확인"></td>
+	</tr>
+	<tr>
+		<th>코멘트 : </th>
+		<td><textarea rows=5 cols=60 placeholder="자신을 자유롭게 소개해주세요"></textarea></td>
+	</tr>
+	<tr>
+		<th colspan="2"><input type="submit" name="확인"></th>
+	</tr>
+</table>
+</form>
+</body>
